@@ -1,0 +1,125 @@
+<p>delete-book works!</p>
+<app-navbar></app-navbar>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h1 style="text-align: center;"><b>Delete Book from Collection</b></h1>
+        </div>
+        <hr>
+        <form class="form" (ngSubmit)="registerForm.form.valid" #registerForm="ngForm"
+            novalidate>
+            <div class="form-group">
+                <label><b>Id</b></label>
+                <input type="number" placeholder="Enter Id" class="form-control" [(ngModel)]="temp.id" name="id"
+                    #id="ngModel" required>
+                <span class="alert-danger" *ngIf="(id.touched || registerForm.submitted ) && id.errors?.required">
+                    Id is required
+                </span>
+            </div>
+
+            <!--  <div class="form-group">
+                <label><b>Book Title</b></label>
+                <input type="text" placeholder="Enter Title" class="form-control" [(ngModel)]="temp.Title" name="Title"
+                    #Title="ngModel" required Title>
+                <span class="alert-danger" *ngIf="(Title.touched || registerForm.submitted ) && Title.errors?.required">
+                    Title is required
+                </span>
+            </div>
+            <div class="form-group">
+                <label><b>Author Name</b></label>
+                <input type="text" placeholder="Enter Author Name" class="form-control" [(ngModel)]="temp.Author"
+                    name="Author" #Author="ngModel" required>
+                <span class="alert-danger"
+                    *ngIf="(Author.touched || registerForm.submitted ) && Author.errors?.required">
+                    Author Name is required
+                </span>
+            </div>
+            <div class="form-group">
+                <label><b>Subject</b></label>
+                <input type="text" placeholder="Enter Subject" class="form-control" [(ngModel)]="temp.Subject"
+                    name="Subject" #Subject="ngModel" required>
+                <span class="alert-danger"
+                    *ngIf="(Subject.touched || registerForm.submitted ) && Subject.errors?.required">
+                    Subject is required
+                </span>
+            </div>
+           
+            <div class="form-group">
+                <label><b>Rack</b></label>
+                <input type="text" placeholder="Enter Rack_No" class="form-control" [(ngModel)]="temp.Rack"
+                    name="Rack" #Rack_No="ngModel" required>
+                <span class="alert-danger"
+                    *ngIf="(Rack_No.touched || registerForm.submitted ) && Rack_No.errors?.required">
+                    Rack Number is required
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label><b>Edition</b></label>
+                <input type="text" placeholder="Enter Edition" class="form-control" [(ngModel)]="temp.Edition"
+                    name="Edition" #Edition="ngModel" required>
+                <span class="alert-danger"
+                    *ngIf="(Edition.touched || registerForm.submitted ) && Edition.errors?.required">
+                   Edition is required
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label><b>Pages</b></label>
+                <input type="number" placeholder="Total Number of Pages" class="form-control" [(ngModel)]="temp.Pages"
+                    name="Pages" #Pages="ngModel" required>
+                <span class="alert-danger"
+                    *ngIf="(Pages.touched || registerForm.submitted ) && Pages.errors?.required">
+                    Pages are required
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label><b>Year Of Publication</b></label>
+                <input type="number" placeholder="Enter Year" class="form-control" [(ngModel)]="temp.YearOfPublication"
+                    name="YearOfPublication" #YearOfPublication="ngModel" required maxlength="4">
+                <span class="alert-danger"
+                    *ngIf="(YearOfPublication.touched || registerForm.submitted ) && YearOfPublication.errors?.required">
+                    Enter Year
+                </span>
+            </div>
+
+
+              YearOfPublication -->
+
+            <div class="text-center">
+                <button type="submit" (click) ="DeleteBook(temp.id)" class="btn btn-info mr-2"><b>Delete Book</b></button>
+
+                <button type="reset" class="btn btn-secondary mr-2"><b>Reset</b></button>
+            </div>
+
+
+            <hr>
+        </form>
+    </div>
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#">http://localhost:4200</a>
+        </div>
+    </footer>
+</body>
+
+</html>

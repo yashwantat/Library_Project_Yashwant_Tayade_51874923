@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<h1>Catalouge</h1>
+<nav class="navbar">
+
+    <input class="form-control" type="text" [(ngModel)]="searchBooks"
+        placeholder="Enter Title, Author or Subject to search Book">
+
+</nav>
+<table class="table table-bordered">
+    <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Subject</th>
+        <th>Rack</th>
+        <th>Action</th>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users | search: searchBooks | sortBook : ['Author'] | paginate: {itemsPerPage: 5, currentPage: p}; ">
+            <td>{{user.id}}</td>
+            <td>{{user.Title}}</td>
+            <td>{{user.Author}}</td>
+            <td>{{user.Subject}}</td>
+            <td>{{user.Rack}}</td>
+            <td>
+                <div id="my_centered_buttons">
+                    <button class="button button2" (click)="getUsers()"><b>Book Details</b></button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    <pagination-controls  (pageChange)= "p = $event"></pagination-controls>
+</table>
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright Reserved @Yashwant Tayde 
+        <a href="#">  http://localhost:4200</a>
+    </div>
+</footer>

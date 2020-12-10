@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<!-- <app-nav-component></app-nav-component> -->
+
+<div class="row">
+    <div class="col-sm-6">
+        <div id="my_centered_buttons">
+            <button class="button button2" [routerLink]="['/addBook']">
+                <div class="container-fluid">
+                    <img [src]=add class="add">
+                </div><b>Add Book</b>
+            </button>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div id="my_centered_buttons">
+            <button class="button button2" [routerLink]="['/deleteBook']">
+            <div class="container-fluid">
+                <img [src]=add1 class="add1">
+            </div><b>Delete Book</b>
+            </button>
+        </div>
+    </div>
+</div>
+<div>
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright Reserved @Yashwant Tayde 
+        <a href="#">  http://localhost:4200</a>
+    </div>
+</footer>
+</div>

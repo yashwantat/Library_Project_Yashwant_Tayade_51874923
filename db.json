@@ -1,0 +1,82 @@
+{
+  "Users": [
+    {
+      "id": 2,
+      "Title": "Eng Drawing",
+      "Author": "Samina",
+      "Subject": "ED",
+      "Rack": "1",
+      "Edition": "5th",
+      "Pages": "1200",
+      "YearOfPublication": "2010"
+    },
+    {
+      "id": 3,
+      "Title": "Eng Mechanics",
+      "Author": "Ankita",
+      "Subject": "EM",
+      "Rack": "4",
+      "Edition": "5th",
+      "Pages": "450",
+      "YearOfPublication": "2002"
+    },
+    {
+      "id": 4,
+      "Title": "Computer Programmings",
+      "Author": "Piyush",
+      "Subject": "CP",
+      "Rack": "5",
+      "Edition": "6th",
+      "Pages": "125",
+      "YearOfPublication": "2000"
+    },
+    {
+      "id": 5,
+      "Title": "Network Theory",
+      "Author": "Archit",
+      "Subject": "NT",
+      "Rack": "7",
+      "Edition": "7th",
+      "Pages": "130",
+      "YearOfPublication": "2003"
+    },
+    {
+      "id": 6,
+      "Title": "Power Systems",
+      "Author": "Arslan",
+      "Subject": "PS",
+      "Rack": "2",
+      "Edition": "8th",
+      "Pages": "200",
+      "YearOfPublication": "2001"
+    },
+    {
+      "id": "44",
+      "Title": "Basics of Angular",
+      "Author": "Vidhya K",
+      "Subject": "Angular JS",
+      "Rack": "6",
+      "Edition": "1st"
+    },
+    {
+      "id": 75,
+      "Title": "Five Point Someone",
+      "Author": "Chetan Bhagat",
+      "Subject": "Love Story",
+      "Rack": "8",
+      "Edition": "1",
+      "Pages": 500,
+      "YearOfPublication": 2015
+    },
+    {
+      "id": 8,
+      "Title": "Management Guru Chanakya",
+      "Author": "S. J, Kale",
+      "Subject": "Life",
+      "Rack": "7",
+      "Edition": "3rd",
+      "Pages": 256,
+      "YearOfPublication": 2012
+    }
+  ]
+}
